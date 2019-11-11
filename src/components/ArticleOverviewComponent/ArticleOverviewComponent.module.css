@@ -1,0 +1,12 @@
+.card {
+    width: 400px;
+    margin: 50px auto 0;
+    border: 1px solid hsla(21, 37%, 15%, 0.3);
+}
+.cardImage {
+    max-width: 100%;
+}
+.cardFooter {
+    display: flex;
+    justify-content: space-between;
+}

@@ -1,0 +1,1 @@
+export {ArticleOverviewComponent} from './ArticleOverviewComponent'
