@@ -6,6 +6,7 @@ export const ArticleOverviewWrapperComponent =({children})=>
         {children}
     </div>
 
+
 ArticleOverviewWrapperComponent.propTypes = {
   children: PropTypes.array
 };

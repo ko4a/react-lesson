@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './ArticleOverviewComponent.module.css'
 import PropTypes from 'prop-types'
+import {CounterComponent} from "../CounterComponent";
 
 export const ArticleOverviewComponent = ({ title, content, userName, createdAt, imageURL }) => {
     return (
@@ -21,6 +22,9 @@ export const ArticleOverviewComponent = ({ title, content, userName, createdAt, 
                 <span>
                     {createdAt}
                 </span>
+            </div>
+            <div>
+                <CounterComponent/>
             </div>
         </div>
     )

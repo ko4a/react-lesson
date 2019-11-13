@@ -1,0 +1,14 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+input:hover {
+    border-color:red;
+}
+.submitWrapper {
+    color: #09d3ac;
+}
+.submitWrapper:hover{
+    border: 5px solid blue;
+}

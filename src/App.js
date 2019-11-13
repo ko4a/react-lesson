@@ -4,6 +4,8 @@ import './App.css';
 import { NavBarComponent } from './components/NavBarComponent'
 import {ArticleOverviewComponent} from "./components/ArticleOverviewComponent";
 import {ArticleOverviewWrapperComponent} from './components/ArticleOverviewWrapperComponent'
+import {CounterComponent} from "./components/CounterComponent";
+import  {LoginComponent} from './components/LoginForm'
 const articles = [{
   title: 'meow',
   content: 'content',
@@ -55,13 +57,18 @@ function App() {
     setUser((user)=>({username:user.username+1}));
   }, [timer]);
 
+  const login = (name,password) => {
+    console.log(name + ' ' + password);
+  };
 
   return (<>
     <NavBarComponent name={user.username}/>
     <ArticleOverviewWrapperComponent>
       {articles.map((article) => <ArticleOverviewComponent key={article.title} {...article}/>)}
     </ArticleOverviewWrapperComponent>
-  </>);
+        <LoginComponent login={login}/>
+  </>
+  );
 }
 
 export default App;

@@ -3,10 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "classnames": "^2.2.6",
+    "prop-types": "latest",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
-    "react-scripts": "3.2.0",
-    "prop-types": "latest"
+    "react-scripts": "3.2.0"
   },
   "scripts": {
     "start": "react-scripts start",
